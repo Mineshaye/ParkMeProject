@@ -2,19 +2,19 @@
 .idea/
 
 # Ignore compiled binaries or build output
-/bin/
-/build/
+**/bin/
+**/build/
 /dist/
 
-# Ignore dependency directories
-/node_modules/
+# Ignore node_modules in all directories
+**/node_modules/
 /vendor/
 
 # Ignore log files
 *.log
 
 # Ignore environment-specific files
-.env
+**.env
 .env.local
 .env.*.local
 

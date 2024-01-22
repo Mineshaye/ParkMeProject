@@ -1,6 +1,7 @@
 const express = require("express");
 const Router = require("./router");
 const mongoose = require("mongoose");
+const cors = require("cors");
 const app = express();
 const PORT = 3000;
 
@@ -10,6 +11,7 @@ mongoose
   .catch(() => console.log("Falied to connect to mongodb"));
 
 app.use(express.json());
+app.use(cors({}));
 app.use("/api/parking", Router);
 
 app.listen(PORT, () => {

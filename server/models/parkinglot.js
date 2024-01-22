@@ -13,5 +13,5 @@ const ParkingLotSchema = new mongoose.Schema({
   lotNumber: Number,
 });
 
-const ParkingLot = mongoose.model("Lot", ParkingLotSchema);
-module.exports = ParkingLot;
+const Lot = mongoose.model("Lot", ParkingLotSchema);
+module.exports = Lot;
