@@ -28,24 +28,16 @@
         </center>
 </div>
     <!-- Input and search button -->
-    <div class="search">
-      <center>
-      <form action="#" method="POST">
-      <input type="text" placeholder="where are you?" list="place">
-      <datalist id="place">
-       <option value="CST" >
-       <option value="CMSS" >
-       <option value="COE" >
-       <option value="CHAPEL" >
-      </datalist>
-    <button type="submit" class="searchbutton"><span class="glyphicon glyphicon-search"></span>Find Parking Space </button>
-    </form>
-    </center>
+<div class="search">
+    <center>
+    <form id="parkingForm">
+    <input type="text" placeholder="where are you?" list="place" id="location">
+    <datalist id="place">
+    </datalist>
+<button type="submit" class="searchbutton"><span class="glyphicon glyphicon-search"></span>Find Parking Space </button>
+</form>
+</center>
 </div>
-
-
-
-
+<script src="./parkingDrop.js"></script>
 </body>
-
 </html>

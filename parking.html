@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="parking.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Space</title>
+    <script src="./script.js" ></script>
+    <script src="./parkingDrop.js" ></script>
+</head>
+<body>
+    <div class="title">
+        <div class="name"><a href="../index.html">
+            ParkMe
+            </a></div>
+        <div>
+            <form id="parkingForm">
+                <input type="text" placeholder="where are you?" list="place" id="location">
+                <datalist id="place">
+                </datalist>
+            <button type="submit" class="searchbutton"><span class="glyphicon glyphicon-search"></span>Find Parking Space </button>
+            </form>
+        </div>
+    </div>
+    <div id="reservationNotification">Click on a parking lot without any car to reserve it!</div>
+    <div class="dashboard">
+        <div class="parkingslots" id="parkingpsace">
+        </div>
+        <div class="no-lots-notification" id="noLotsNotification">No lots available for this space</div>
+    </div>
+        
+</body>
+</html>
